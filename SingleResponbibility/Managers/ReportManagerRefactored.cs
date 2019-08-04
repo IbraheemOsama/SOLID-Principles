@@ -6,7 +6,7 @@ namespace SingleResponbibility
 {
     public class ReportManagerRefactored
     {
-        public string GetReport(int year)
+        public string GetReportByYear(int year)
         {
             try
             {

@@ -1,12 +1,21 @@
 ﻿using System;
 
-namespace SOLID_Principles
+namespace SingleResponbibility
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello Single Res!");
+            // Old
+            var reportManager = new ReportManager();
+            Console.WriteLine(reportManager.GetReportByYear(2018));
+            Console.WriteLine(reportManager.GetReportByYear(2019));
+
+            Console.WriteLine("-------------------------------------------\n");
+            // Refactored
+            var reportManagerRefactored = new ReportManagerRefactored();
+            Console.WriteLine(reportManager.GetReportByYear(2018));
+            Console.WriteLine(reportManager.GetReportByYear(2019));
         }
     }
 }

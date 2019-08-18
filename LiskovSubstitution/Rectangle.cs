@@ -2,7 +2,7 @@ using System;
 
 namespace liskovSubstitution
 {
-    public class Rectangle : IShape
+    public class Rectangle : IExport, IDisplay
     {
         public int Width { get; set; }
         public int Height { get; set; }

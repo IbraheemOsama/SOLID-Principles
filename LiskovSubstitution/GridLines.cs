@@ -3,7 +3,7 @@ using System.Text;
 
 namespace liskovSubstitution
 {
-    public class GridLines : IShape
+    public class GridLines : IDisplay
     {
         public int XLines { get; set; }
         public int YLines { get; set; }
@@ -12,11 +12,6 @@ namespace liskovSubstitution
         public void Display()
         {
             Console.WriteLine($"XLines :{XLines} , YLines {YLines} and Space {Space}");
-        }
-
-        public string Export()
-        {
-            throw new NotImplementedException();
         }
     }
 }

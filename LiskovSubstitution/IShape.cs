@@ -11,7 +11,7 @@ namespace liskovSubstitution
         string Export();
     }
 
-     public interface IShapre
+     public interface IShape
     {
         void Display();
         string Export();

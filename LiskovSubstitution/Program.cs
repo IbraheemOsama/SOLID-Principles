@@ -7,7 +7,7 @@ namespace liskovSubstitution
     {
         static void Main(string[] args)
         {
-            var shapes = new List<IShape>();
+            var shapes = new List<IDisplay>();
 
             shapes.Add(new Rectangle { Width = 10, Height = 20 });
             shapes.Add(new GridLines { XLines = 20, YLines = 30, Space = 5 });
@@ -17,10 +17,10 @@ namespace liskovSubstitution
                 shape.Display();
             }
 
-            foreach (var shape in shapes)
-            {
-                Console.WriteLine(shape.Export());
-            }
+            // foreach (var shape in shapes)
+            // {
+            //     Console.WriteLine(shape.Export());
+            // }
         }
     }
 }
